@@ -70,7 +70,7 @@ window.onload=()=>{//wait for page to load
             temp-= .01
                 document.body.style.setProperty('--scroll', temp);
         // stop incrementing once the blob has reached the start of the animation
-            if(temp <= 0.01)
+            if(temp <= 0)
             {
                 clearInterval(inter)
 
@@ -94,7 +94,7 @@ window.onload=()=>{//wait for page to load
         var temp = 0
 
         //if the blob is in the first card
-        if(scroll <.5 && scroll >=0 )
+        if(scroll <.5 && scroll >=-0.5 )
         {
             var inter = setInterval(function()
             {
