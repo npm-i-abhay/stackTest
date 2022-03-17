@@ -1,6 +1,6 @@
-@import url('responsive.css');
+/* @import url('responsive.css');
 @import url('normalize.css');
-@import url('animation.css');
+@import url('animation.css'); */
 :root{
     --state: paused;
     --stateTwo:paused;
