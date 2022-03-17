@@ -22,10 +22,10 @@
 /* key  frames for card2 */
 @keyframes blob3{
     0%{
-        transform:scale(1) translate(-400px,120px);
+        transform:scale(1) translate(-250px,140px);
       }
       30%{
-        transform:scale(.95) translate(-80px,115px);
+        transform:scale(.95) translate(-80px,140px);
       }
       50%{
           transform:scale(.95) translate(15px,60px);
@@ -42,16 +42,16 @@
 }
 @keyframes blob4{
     0%{
-      transform:scale(1) translate(-400px,90px);
+      transform:scale(1) translate(-250px,80px);
     }
     30%{
-        transform:scale(.95) translate(-80px,90px);
+        transform:scale(.95) translate(-80px,80px);
     }
     50%{
-        transform:scale(.95) translate(15px,90px);
+        transform:scale(.95) translate(15px,80px);
     }
     60%{
-        transform:scale(.95) translate(5px,90px);
+        transform:scale(.95) translate(5px,80px);
     }
     70%{
         transform:scale(.85) translate(50px,190px);
@@ -62,10 +62,10 @@
 }
 @keyframes blob5{
     0%{
-        transform:scale(1) translate(-400px,-112px);
+        transform:scale(1) translate(-250px,-70px);
       }
       30%{
-        transform:scale(.95) translate(-80px,-90px);
+        transform:scale(.95) translate(-80px,-70px);
       }
       50%{
           transform:scale(.95) translate(15px,-150px);
@@ -82,13 +82,13 @@
 }
 @keyframes blob6{
     0%{
-        transform:scale(1) translate(-400px,-100px);
+        transform:scale(1) translate(-250px,-130px);
       }
       30%{
-          transform:scale(.95) translate(-80px,-120px);
+          transform:scale(.95) translate(-80px,-130px);
       }
       50%{
-          transform:scale(.95) translate(15px,-120px);
+          transform:scale(.95) translate(15px,-130px);
       }
     60%{
         transform:scale(.95) translate(5px,-120px);

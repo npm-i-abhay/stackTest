@@ -101,7 +101,7 @@ transform: translateX(-180px);
     background-color: #8C9DF8;
     animation: blob1 .75s linear 1;
     animation-play-state: var(--state);
-    animation-delay: calc(var(--scroll) * -2s);
+    animation-delay: calc(var(--scroll) * -3.3s);
     animation-iteration-count: 1;
     animation-fill-mode: both;
 }
@@ -111,7 +111,7 @@ transform: translateX(-180px);
     background-color: #8C9DF8;
     animation: blob2 .75s linear 1;
     animation-play-state: var(--state);
-    animation-delay: calc(var(--scroll) * -2s);
+    animation-delay: calc(var(--scroll) * -3.3s);
     animation-iteration-count: 1;
     animation-fill-mode: both;
 }
@@ -121,16 +121,15 @@ transform: translateX(-180px);
 {
     animation: blob3 1s linear 1;
     animation-play-state: var(--stateTwo);
-    animation-delay: calc(var(--scroll) * -2s);
+    animation-delay: calc(var(--scroll) * -3.3s);
     animation-iteration-count: 1;
     animation-fill-mode: both;
 }
 #circle2B
 {
-
     animation: blob4 1s linear 1;
     animation-play-state: var(--stateTwo);
-    animation-delay: calc(var(--scroll) * -2s);
+    animation-delay: calc(var(--scroll) * -3.3s);
     animation-iteration-count: 1;
     animation-fill-mode: both;
 }
@@ -138,10 +137,9 @@ transform: translateX(-180px);
 */
 #circle2C
 {
-
     animation: blob5 1s linear 1;
     animation-play-state: var(--stateTwo);
-    animation-delay: calc(var(--scroll) * -2s);
+    animation-delay: calc(var(--scroll) * -3.3s);
     animation-iteration-count: 1;
     animation-fill-mode: both;
 } 
@@ -149,7 +147,7 @@ transform: translateX(-180px);
 {
     animation: blob6 1s linear 1;
     animation-play-state: var(--stateTwo);
-    animation-delay: calc(var(--scroll) * -2s);
+    animation-delay: calc(var(--scroll) * -3.3s);
     animation-iteration-count: 1;
     animation-fill-mode: both;
 }
@@ -159,11 +157,12 @@ transform: translateX(-180px);
 .cardThreeBlobs{
     background-image: url('../assets/svgs/background.png');
 }
+
 #circle3A
 {
     animation: blob7 1s linear 1;
     animation-play-state: var(--stateThree);
-    animation-delay: calc(var(--scroll) * -2s);
+    animation-delay: calc(var(--scroll) * -3.3s);
     animation-iteration-count: 1;
     animation-fill-mode: both;
 }
@@ -172,7 +171,7 @@ transform: translateX(-180px);
 {
     animation: blob8 1s linear 1;
     animation-play-state: var(--stateThree);
-    animation-delay: calc(var(--scroll) * -2s);
+    animation-delay: calc(var(--scroll) * -3.3s);
     animation-iteration-count: 1;
     animation-fill-mode: both;
 }
@@ -181,7 +180,7 @@ transform: translateX(-180px);
 {
     animation: blob9 1s linear 1;
     animation-play-state: var(--stateThree);
-    animation-delay: calc(var(--scroll) * -2s);
+    animation-delay: calc(var(--scroll) * -3.3s);
     animation-iteration-count: 1;
     animation-fill-mode: both;
 }
@@ -190,7 +189,7 @@ transform: translateX(-180px);
 {
     animation: blob10 1s linear 1;
     animation-play-state: var(--stateThree);
-    animation-delay: calc(var(--scroll) * -2s);
+    animation-delay: calc(var(--scroll) * -3.3s);
     animation-iteration-count: 1;
     animation-fill-mode: both;
 }

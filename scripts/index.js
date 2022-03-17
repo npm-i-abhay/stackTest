@@ -2,6 +2,7 @@ window.onload=()=>{//wait for page to load
     
     var toggle = true // arbitrary variable that changes when a bullet is clicked to unmount the scroll
     
+    var circle = document.getElementById("#circleOne")
     // bullets and styles 
     var butOne = document.getElementById("butOne")
     var butOneStyle = butOne.style
@@ -24,22 +25,23 @@ window.onload=()=>{//wait for page to load
         entries.forEach(entry=>{
             if (entry.isIntersecting)//is the element in viewport completely(threshold1)?
             {
-                // callback
+                // monitoring scroll event
                 window.addEventListener('scroll', () => {
                     if(toggle)//if toggle is true
             
                     {
                         // creating a property for the body '--scroll' that is bounded with window's scroll height.
-                        document.body.style.setProperty('--scroll', 
-                        window.pageYOffset / (document.body.offsetHeight - window.innerHeight)-0.5);
+                                document.body.style.setProperty('--scroll', 
+                                window.pageYOffset / (document.body.offsetHeight - window.innerHeight)-.70);
+
+                        
                         
                         // defining scroll to monitor it
                         var scroll = document.body.style.getPropertyValue('--scroll')
-
                         // adding dynamic styles to the bullets changing 
                         butOne.style.backgroundColor= scroll>=0 && scroll<0.15?'#242424':null
-                        butTwo.style.backgroundColor= scroll>0.15 && scroll<0.4?'#242424':null
-                        butThree.style.backgroundColor= scroll>0.41 && scroll<0.52?'#242424':null
+                        butTwo.style.backgroundColor= scroll>0.09 && scroll<0.24?'#242424':null
+                        butThree.style.backgroundColor= scroll>0.24 && scroll<0.52?'#242424':null
                     }
                 }, false)
             }
@@ -85,6 +87,7 @@ window.onload=()=>{//wait for page to load
 
         // defining scroll to monitor it
         var scroll = document.body.style.getPropertyValue('--scroll')
+        console.log(document.body.style.getPropertyValue('--scroll'))
 
         //set toggle to false to unmount scroll
         toggle = false
@@ -99,7 +102,7 @@ window.onload=()=>{//wait for page to load
                 document.body.style.setProperty('--scroll', temp);
 
             // stop incrementing once the blob has reached the 2nd card/50%of the animation
-            if(temp >= .25)
+            if(temp >= .15)
             {
                 clearInterval(inter)
             }
@@ -107,7 +110,7 @@ window.onload=()=>{//wait for page to load
         };
 
         //if the blob is in the second card
-        if(scroll >.25 && scroll < 1)
+        if(scroll >.15 && scroll < 1)
         {
             var temp = .5
             var newInter = setInterval(function()
@@ -115,7 +118,7 @@ window.onload=()=>{//wait for page to load
                 temp -= 0.01
                 document.body.style.setProperty('--scroll', temp);
             // stop decrementing once the blob has reached the 2nd card/50%of the animation
-            if(temp <= .30)
+            if(temp <= .15)
             {
                 clearInterval(newInter)
             }
@@ -136,7 +139,7 @@ window.onload=()=>{//wait for page to load
         var scroll = document.body.style.getPropertyValue('--scroll')
 
         // if scroll is greater than 0.1 then temp is .25 else it'll be  0
-        var temp = scroll>0.1?.25:0
+        var temp = scroll>0.1?.15:0
 
         //set toggle to false to unmount scroll
         toggle = false
