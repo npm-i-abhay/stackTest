@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylsheets/styles.css">
+</head>
+<body>
+    <h1>some text here</h1>
+    <h1 id="margin">some text here</h1>
+    <h1 id="margin">some text here</h1>
+    <h1 id="margin">some text here</h1>
+    <div class="Wrapper">
+        
+        <div id="CardWrap" class="CardWrapper">
+            <div class="Card card1 " > 
+                <div id="cardOne">
+                    <div id="circleOne" class="blob"></div>
+                    <div id="circleTwo" class="blob"></div>
+                </div>
+            </div>   
+            
+            <div class="Card card2 ">
+                <div id="cardTwo">
+                    <div id="circle2A" class="blob cardTwoBlobs"></div>
+                    <div id="circle2B" class="blob cardTwoBlobs"></div>
+                    <div id="circle2C" class="blob cardTwoBlobs"></div>
+                    <div id="circle2D" class="blob cardTwoBlobs"></div>
+                </div>
+            </div>
+
+            <div class="Card card3 ">
+                <div id="cardThree">
+                    <div id="circle3A" class="blob cardThreeBlobs"></div>
+                    <div id="circle3B" class="blob cardThreeBlobs"></div>
+                    <div id="circle3C" class="blob cardThreeBlobs"></div>
+                    <div id="circle3D" class="blob cardThreeBlobs"></div>
+                </div>
+
+            </div>
+        </div>
+        
+    
+    
+    <div id="bullets" >
+        <div id="butOne" > </div>
+        <div id="butTwo"></div>
+        <div id="butThree"></div>
+    </div>
+
+
+    <h1>some text here</h1>
+    <h1 id="margin">some text here</h1>
+    <svg class="goo" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+        <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+        </defs>
+    </svg>
+    
+    <script src="../scripts/index.js"></script>
+</body>
+</html>
