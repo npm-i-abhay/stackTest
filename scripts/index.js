@@ -39,7 +39,7 @@ window.onload=()=>{//wait for page to load
                         // defining scroll to monitor it
                         var scroll = document.body.style.getPropertyValue('--scroll')
                         // adding dynamic styles to the bullets changing 
-                        butOne.style.backgroundColor= scroll>=0 && scroll<0.15?'#242424':null
+                        butOne.style.backgroundColor= scroll>=-0.5 && scroll<0.15?'#242424':null
                         butTwo.style.backgroundColor= scroll>0.09 && scroll<0.24?'#242424':null
                         butThree.style.backgroundColor= scroll>0.24 && scroll<0.52?'#242424':null
                     }
