@@ -1,6 +1,6 @@
 window.onload=()=>{//wait for page to load 
     
-    var toggle = true // arbitrary variable that changes when a bullet is clicked 
+    var toggle = true // arbitrary variable that changes when a bullet is clicked to unmount the scroll
     
     // bullets and styles 
     var butOne = document.getElementById("butOne")
@@ -60,7 +60,7 @@ window.onload=()=>{//wait for page to load
 
         //set toggle to false to unmount scroll
         toggle = false
-        var temp = scroll
+        temp = scroll
 
         // setting interval to manually increment the value of scroll
         var inter = setInterval(function()

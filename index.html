@@ -4,17 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- defining title for the document -->
+    <title>StackAdapt Assessment</title>
+    <!-- linking main stylesheet containing all the stylesheets -->
     <link rel="stylesheet" href="../stylsheets/main.css">
+    <!-- adding icon for the browser tab -->
+    <link rel="icon" href="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_c0e7cba72dab7f137f8374fcd177a46e/stackadapt.png">
 </head>
 <body>
-    <h1>some text here</h1>
-    <h1 id="margin">some text here</h1>
-    <h1 id="margin">some text here</h1>
-    <h1 id="margin">some text here</h1>
+    <!-- wrapper to contain all tags -->
     <div class="Wrapper">
         
+        <!-- spacer -->
+        <div id="margin" > </div>
+
+        <!-- info text -->
+        <section class="info" >
+            <h1>The Turbo Encabulator</h1>
+            <p id="txt" >
+                For a number of years now, work has been proceeding in order to bring perfection to the crudely conceived idea of a
+                transmission that would not only supply inverse reactive current for use in unilateral phase detractors, but would also be
+                capable of automatically synchronizing cardinal grammeters. Such an instrument is the turbo encabulator.
+            </p>
+        </section>
+        
+        <!-- card wrapper that contains 3 cards -->
         <div id="CardWrap" class="CardWrapper">
+
+            <!-- card1 with 2 blobs/circles -->
             <div class="Card card1 " > 
                 <div id="cardOne">
                     <div id="circleOne" class="blob"></div>
@@ -22,6 +39,7 @@
                 </div>
             </div>   
             
+            <!-- card2 with 4 blobs/circles -->
             <div class="Card card2 ">
                 <div id="cardTwo">
                     <div id="circle2A" class="blob cardTwoBlobs"></div>
@@ -31,6 +49,7 @@
                 </div>
             </div>
 
+            <!-- card3 with 4 blobs/circles -->
             <div class="Card card3 ">
                 <div id="cardThree">
                     <div id="circle3A" class="blob cardThreeBlobs"></div>
@@ -38,31 +57,35 @@
                     <div id="circle3C" class="blob cardThreeBlobs"></div>
                     <div id="circle3D" class="blob cardThreeBlobs"></div>
                 </div>
-
             </div>
+
         </div>
+        <!-- card wrapper closes -->
         
+        <!--bullets container-->
+        <div id="bullets" >
+            <div id="butOne" > </div>
+            <div id="butTwo"></div>
+            <div id="butThree"></div>
+        </div>
     
-    
-    <div id="bullets" >
-        <div id="butOne" > </div>
-        <div id="butTwo"></div>
-        <div id="butThree"></div>
+        <!-- spacer -->
+        <h1 id="margin-top"></h1>
+
+        <!-- svg being used with matrices and filters to generate the gooey effect -->
+        <svg class="goo" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+            </defs>
+        </svg>
     </div>
+    <!-- wrapper closes -->
 
-
-    <h1>some text here</h1>
-    <h1 id="margin">some text here</h1>
-    <svg class="goo" xmlns="http://www.w3.org/2000/svg" version="1.1">
-        <defs>
-        <filter id="goo">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-            <feBlend in="SourceGraphic" in2="goo" />
-            </filter>
-        </defs>
-    </svg>
-    
+    <!-- loading javascript -->
     <script src="../scripts/index.js"></script>
 </body>
 </html>

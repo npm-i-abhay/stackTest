@@ -1,4 +1,15 @@
+/* animation key frames for mobile */
 @media only screen and (max-width: 600px) {
+
+    .Wrapper{
+        width: 100%;
+    }
+    
+    .info{
+        text-align: center;
+        padding: 1em;
+    }
+
     @keyframes blob1{
         from{
         transform:scale(1) translate(0,50px);
